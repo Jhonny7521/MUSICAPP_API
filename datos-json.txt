@@ -1,0 +1,37 @@
+LOGIN
+{
+    "email": "jhonny.jql1210@gmail.com",
+    "password": "jhonnyjhonny28"
+}
+
+SIGNUP
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "username": "",
+    "password": ""
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3MzEyODI3MSwiaWF0IjoxNjczMDQxODcxLCJqdGkiOiIxNzBiYWFkOTQ1YWI0NDQ2OTg3N2E3ODM0MDEzOWYzMyIsInVzZXJfaWQiOjEyfQ.Ezv-vhffbQl2Ij4Mb3jjOOwMOBN-fqTJNM1Vln1hTxU
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4c
+
+{
+    "readable": true,
+    "title": "Prueba",
+    "title_short": "Prueba",
+    "title_version": "",
+    "isrc": "",
+    "duration": 300,
+    "track_position": 0,
+    "rank": 0,
+    "release_date": "2022-10-07",
+    "explicit_lyrics": false,
+    "contributors": [],
+    "artist": 2,
+    "album": 1,
+    "type": "track"
+}
+
+
+
