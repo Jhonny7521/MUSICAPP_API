@@ -37,7 +37,7 @@ $ python manage.py test
 - Clona el repositorio:
 
 ```sh
-$ git clone https://github.com/tu-usuario/musicapp-api.git
+$ git clone https://github.com/Jhonny7521/MUSICAPP_API.git
 ```
 
 - Dirígete a la carpeta donde se ha clonado el proyecto
