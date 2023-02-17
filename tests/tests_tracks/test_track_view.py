@@ -2,8 +2,6 @@ from faker import Faker
 
 from rest_framework import status
 
-from apps.songs.models.tracks_model import Track
-
 from tests.test_config import TestSetUp
 from tests.factories.tracks.tracks_factories import TracksFactory
 from tests.factories.albums.albums_factories import AlbumsFactory

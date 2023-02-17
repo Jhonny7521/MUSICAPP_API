@@ -24,5 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('apps.users.api.urls')),
     path('', include('apps.songs.api.routers')),
-    re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    re_path(r'^swagger/docs/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]

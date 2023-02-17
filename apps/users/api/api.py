@@ -1,4 +1,3 @@
-from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 
 from rest_framework import generics, status
@@ -14,8 +13,6 @@ from .serializers import SignUpSerializer, GetUserSerializer
 from apps.users.tokens import create_jwt_pair_for_user
 from apps.users.models import User
 
-# Create your views here.
-
 class SignUpView(generics.GenericAPIView):
   serializer_class = SignUpSerializer
 
@@ -25,7 +22,6 @@ class SignUpView(generics.GenericAPIView):
 
     if serializer.is_valid():      
       serializer.save()
-      # user = User.objects.filter(email=data.get('email')).first() # 1ra forma
       user = User.objects.filter(email=serializer.data.get('email')).first() # 2da forma
       tokens = create_jwt_pair_for_user(user)
       response = {"message": "El usuario se creó correctamente", "user_data": serializer.data, "tokens": tokens}
@@ -51,7 +47,7 @@ class LoginView(APIView):
         'email':idUser.email,
         'is_superuser': idUser.is_superuser
       }
-      # print(user_data)
+
       response = {"message": "Login exitoso", "user_data": user_data ,"tokens": tokens}
 
       return Response(data=response, status=status.HTTP_200_OK)

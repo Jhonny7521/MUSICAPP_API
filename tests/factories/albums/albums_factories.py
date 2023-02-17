@@ -2,9 +2,6 @@ from faker import Faker
 
 from apps.songs.models.album_model import Album
 
-from tests.factories.typeOfFile.type_of_file_factories import TypeOfFileFactory
-from tests.factories.artists.artist_factories import ArtistFactory
-
 faker = Faker()
 
 class AlbumsFactory:

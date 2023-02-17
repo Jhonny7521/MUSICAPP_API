@@ -21,10 +21,6 @@ class AlbumTestCase(TestSetUp):
     self.assertEqual(response.status_code, status.HTTP_200_OK)
 
   def test_search_one_album(self):
-    # type_artist, _ = TypeOfFile.objects.get_or_create(**TypeOfFileFactory().build_type_of_file_JSON('artist'))
-    # type_album, _ = TypeOfFile.objects.get_or_create(**TypeOfFileFactory().build_type_of_file_JSON('album'))
-    # artist, _ = Artist.objects.get_or_create(**ArtistFactory().build_artist_JSON(type_artist))
-    # album = Album.objects.create(**AlbumsFactory().build_album_JSON(type_album, artist))
     type_artist = TypeOfFileFactory().create_type_of_file('artist')
     type_album = TypeOfFileFactory().create_type_of_file('album')
     artist = ArtistFactory().create_artist(type_artist)
